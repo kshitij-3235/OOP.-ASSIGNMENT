@@ -1,1 +1,50 @@
 
+#include <iostream>
+using namespace std;
+class student
+{
+ public:
+        string name;
+        int roll_no;
+        float marks;
+        string div;
+        int id;
+      
+
+ void display()
+ {
+        cout<<"Name:"<<name<<endl;
+        cout<<"Roll No:"<<roll_no<<endl;
+        cout<<"Marks:"<<marks<<endl;
+        cout<<"Div:"<<div<<endl;
+        cout<<"Id:"<<endl;
+        cout<<"-----------------------"<<endl;
+ }
+};
+ int main()
+ {
+        student s1;
+        s1.name="Aryan";
+        s1.roll_no="01";
+        s1.marks=91.5;
+        s1.div="A";
+        s1.id=3532;
+        s1.display();
+
+        student s2;
+        s2.name="Bhushan";
+        s2.roll_no="02";
+        s2.marks=90.4;
+        s2.div="A";
+        s2.id=1245;
+        s2.display();
+
+        student s3;
+        s3.name="Charles";
+        s3.roll_no="03";
+        s3.marks=92.3;
+        s3.div="A";
+        s3.id=6745;
+        s3.display();
+        return 0;
+ }
