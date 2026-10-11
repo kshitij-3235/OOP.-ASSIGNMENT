@@ -4,12 +4,15 @@ using namespace std;
 class employee
 {
     public:
+        string company_name;
         int emp_id;
         string emp_name;
         float emp_salary;
 
     void getdetails()
     {
+        cout<<"Enter Company Name:";
+        cin>>companny_name;
         cout<<"Enter Employee ID: ";
         cin>>emp_id;
         cout<<"Enter Employee Name: ";
@@ -20,6 +23,7 @@ class employee
 
     void displaydetails()
     {
+        cout<<endl<<"Company Name:"<<company_name<<endl;
         cout<<endl<<"Employee ID: "<<emp_id<<endl;
         cout<<"Employee Name: "<<emp_name<<endl;
         cout<<"Employee Salary: "<<emp_salary<<endl;
