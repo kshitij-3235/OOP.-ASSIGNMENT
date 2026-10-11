@@ -6,12 +6,14 @@ class Person
 {
     public:
         string name;
+        string address;
         int age;
         string contact;
 
-    Person(string n, int a, string c) 
+    Person(string n,string m, int a, string c) 
     {
         name = n;
+        address = m;
         age = a;
         contact = c;
     }
@@ -19,6 +21,7 @@ class Person
     void displayPersonDetails() 
     {
         cout << "Name: " << name << endl;
+        cout <<"Address:"<<address << endl;
         cout << "Age: " << age << endl;
         cout << "Contact: " << contact << endl;
     }
@@ -32,7 +35,7 @@ class Student : public Person
         string branch;
 
 
-    Student(string n, int a, string c, int roll, string br) 
+    Student(string n,string m, int a, string c, int roll, string br) 
         : Person(n, a, c) {
         rollNumber = roll;
         branch = br;
@@ -47,7 +50,7 @@ class Student : public Person
 
 int main() {
     // Creating a Student object
-    Student student1("Alice Smith", 20, "alice@email.com", 101, "Computer Science");
+    Student student1("Alice Smith","Lonikalbhour", 20, "alice@email.com", 101, "Computer Science");
 
     cout << "--- Student Information ---" << endl;
     student1.displayStudentDetails();
